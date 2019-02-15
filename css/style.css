@@ -75,3 +75,15 @@ header a:hover{
   text-align: center;
   width: 30%
 }
+
+#box .box img{
+  width: 90px;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#E0AF96;
+  text-align: center;
+}
