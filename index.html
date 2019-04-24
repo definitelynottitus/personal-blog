@@ -2,40 +2,28 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="keywords" content="hello world">
-    <meta name="author" content="Titus liu">
-    <title>Titus Blog | Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titus's Blog</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div id="branding">
-          <h1>Titus Blog</h1>
+    <div class="nav">
+        <label for="toggle"> &#9776; </label>
+        <input type="checkbox" id="toggle">
+        <div class="menu">
+          <a href="index.html"> Home </a>
+          <a href="projects.html"> Projects </a>
+          <a href="about.html"> About </a>
         </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    </div>
 
-    <section id="showcase">
-      <div class="container">
-        <h1>You have been hacked</h1>
+    <div class="container">
+        <h1>Recent Projects</h1>
+        <h3> Twitter data gathering using R </h3>
         <p>In this assignment, I will be using R studio with various libraries such as twitteR, ROAuth to access the Twitter API. First I will run a "handshake" to authenticate the Twitter API with R. Furthermore, I will use the function "searchTwitter" from the library(twitteR) to fetch tweets on a specific topic. This would give me a string list which I can apply "twListToDF" to convert to a data frame table. From that, I can use internal functions from R such as hist() or plot() to render a graph. Once all the plots have been set, they will be converted into a PDF document with all the plots and source code for verification
         </p>
-      </div>
-    </section>
+    </div>
 
-
-
-    <footer>
-      <p>Titus Blog Post, Copyright &copy; 2019</p>
-    </footer>
+    <footer><p>Titus Blog Post, Copyright &copy; 2019</p></footer>
   </body>
 </html>

@@ -1,69 +1,81 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
-  padding: 0;
+html, body {
   margin: 0;
-  background-color: #F0D6BB;
+  width: 100%
 }
 
-/* Global */
-.container{
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
+html {
+  font-family: "helvetica neue", sans-serif;
+  height: 100%
 }
 
-ul{
-  margin: 0;
-  padding: 0;
+
+/* Nav */
+.nav{
+  text-align: right;
+  border-bottom: 1px solid #EAEAEB;
+  height: 70px;
+  line-height: 70px;
 }
 
-/* Header */
-
-header{
-  background: #A86052;
-  color: #ffffff;
-  padding-top: 30px;
-  min-height: 70px;
-  border-bottom: #E0AF96 3px solid;
+.menu {
+  margin: 0 30px 0 0;
 }
 
-header a{
-  color: #ffffff;
+.menu a {
+  clear: right;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
+  color: grey;
+  margin: 0 10px;
+  line-height: 70px;
 }
 
-
-header li{
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
-}
-
-header #branding{
-  float: left;
-}
-
-header #branding h1{
-  margin: 0;
-}
-
-header nav{
+label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
   float: right;
-  margin-top: 10px;
 }
 
-header a:hover{
-  color: #cccccc;
-  font-weight: bold;
+#toggle{
+  display: none;
 }
 
-#showcase{
-  min-height: 400px;
+@media only screen and (max-width: 768px) {
+    label{
+      display: block;
+      cursor: pointer;
+    }
+    .menu {
+      display: none;
+      text-align: center;
+      width: 100%
+    }
+    .menu a {
+      display: block;
+      margin: 0;
+      border-bottom: 1px solid #EAEAEB;
+    }
+    #toggle:checked + .menu{
+      display: block;
+    }
+    .container {
+      margin-top: 210px
+    }
+}
+
+
+.container{
+  min-height: 800px;
   text-align: center;
+  padding: 10px 100px 0 100px;
+  background-color: #f8f2e8;
+}
+
+#secret {
+  margin-top: 900px;
+  padding-bottom: 10px;
 }
 
 #boxes{
@@ -77,9 +89,8 @@ header a:hover{
 }
 
 footer{
-  padding:20px;
-  margin-top:20px;
-  color:#ffffff;
-  background-color:#E0AF96;
+  position: relative;
+  padding: 5px 0 15px 0;
+  width: 100%;
   text-align: center;
 }
